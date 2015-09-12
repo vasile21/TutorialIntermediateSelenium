@@ -17,12 +17,12 @@ public class LoginTest extends TestBase{
 
     private String validEmail = "vasile_vetisan@yahoo.com";
     private String wrongEmail = "popoo@yahho.com";
-    private String validPassword = "Tinichigiu21@";
+    private String validPassword = "need_valid pass";
     private String wrongPassword = "MyNewName";
     private String invalidEmail = "qazwee";
 
-    private String validMediaUsername = "vetisanvasile@gmail.com";
-    private String validFacebookPassword = "Tinichigiu21@";
+    private String validMediaUsername = "vetisanvasile";
+    private String validFacebookPassword = "need validpass";
     private String validGooglePassword = "tinichigiu21@";
 
     private String currentURL;
