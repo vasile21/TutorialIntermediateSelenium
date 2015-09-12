@@ -15,24 +15,17 @@ import java.util.Set;
 
 public class LoginTest extends TestBase{
 
-    private String validEmail = "vasile_vetisan@yahoo.com";
-    private String wrongEmail = "popoo@yahho.com";
-    private String validPassword = "Tinichigiu21@";
-    private String wrongPassword = "MyNewName";
-    private String invalidEmail = "qazwee";
-
-    private String validMediaUsername = "vetisanvasile@gmail.com";
-    private String validFacebookPassword = "Tinichigiu21@";
-    private String validGooglePassword = "tinichigiu21@";
+    private String validEmail = "testemag21@gmail.com"; //this email is identical with the one used for media login but it can be different
+    private String wrongEmail = "popoo@yahho.com"; //invalid email
+    private String invalidEmail = "invalidmail";
+    private String validPassword = "MyValidPass21";
+    private String wrongPassword = "MyVrongPass";
+    private String validMediaUsername = "testemag21@gmail.com";
+    private String validMediaPassword = "EPICemag21";
 
     private String currentURL;
     private String registrationPageURL = "https://www.emag.ro/user/register?ref=ssi_login";
 
-    /**
-     * @parentWindowHandler will take main browser window as parnet of pop-ups
-     */
-    //private String parentWindowHandler = null;
-    //private String subWindowHandler = null;
 
     @BeforeClass
     public static void setUpTestClass(){
@@ -213,7 +206,7 @@ public class LoginTest extends TestBase{
             LoginPage.facebookUsername(driver).click();
             LoginPage.facebookUsername(driver).sendKeys(validMediaUsername);
             LoginPage.facebookPassword(driver).click();
-            LoginPage.facebookPassword(driver).sendKeys(validFacebookPassword);
+            LoginPage.facebookPassword(driver).sendKeys(validMediaPassword);
             LoginPage.facebookLoginBtn(driver).click();
         }
         else if(goo == true){
@@ -221,7 +214,7 @@ public class LoginTest extends TestBase{
             LoginPage.googleUsername(driver).sendKeys(validMediaUsername);
             LoginPage.googleNextButton(driver).click();
             LoginPage.googlePassword(driver).click();
-            LoginPage.googlePassword(driver).sendKeys(validGooglePassword);
+            LoginPage.googlePassword(driver).sendKeys(validMediaPassword);
             LoginPage.googleLoginBtn(driver).click();
         }
     }
