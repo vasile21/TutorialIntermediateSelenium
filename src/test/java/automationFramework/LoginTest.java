@@ -15,6 +15,7 @@ import java.util.Set;
 
 public class LoginTest extends TestBase{
 
+<<<<<<< HEAD
     private String validEmail = "testemag21@gmail.com"; //this email is identical with the one used for media login but it can be different
     private String wrongEmail = "popoo@yahho.com"; //invalid email
     private String invalidEmail = "invalidmail";
@@ -22,6 +23,17 @@ public class LoginTest extends TestBase{
     private String wrongPassword = "MyVrongPass";
     private String validMediaUsername = "testemag21@gmail.com";
     private String validMediaPassword = "EPICemag21";
+=======
+    private String validEmail = "vasile_vetisan@yahoo.com";
+    private String wrongEmail = "popoo@yahho.com";
+    private String validPassword = "valid_password";
+    private String wrongPassword = "MyNewName";
+    private String invalidEmail = "qazwee";
+
+    private String validMediaUsername = "valid_email";
+    private String validFacebookPassword = "valid_facebook.pass";
+    private String validGooglePassword = "valid_google.pass";
+>>>>>>> 2f1da5cd9e457037cf09fccdf4a50900e7eae5fd
 
     private String currentURL;
     private String registrationPageURL = "https://www.emag.ro/user/register?ref=ssi_login";
