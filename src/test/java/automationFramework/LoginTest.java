@@ -17,7 +17,7 @@ public class LoginTest extends TestBase{
 
     private String validEmail = "testemag21@gmail.com"; //this email is identical with the one used for media login but it can be different
     private String wrongEmail = "popoo@yahho.com"; //invalid email
-    private String invalidEmail = "qazwee";
+    private String invalidEmail = "invalidmail";
     private String validPassword = "MyValidPass21";
     private String wrongPassword = "MyVrongPass";
     private String validMediaUsername = "testemag21@gmail.com";
