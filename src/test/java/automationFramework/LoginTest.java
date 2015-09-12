@@ -15,15 +15,13 @@ import java.util.Set;
 
 public class LoginTest extends TestBase{
 
-    private String validEmail = "vasile_vetisan@yahoo.com";
-    private String wrongEmail = "popoo@yahho.com";
-    private String validPassword = "need_valid pass";
-    private String wrongPassword = "MyNewName";
+    private String validEmail = "testemag21@gmail.com"; //this email is identical with the one used for media login but it can be different
+    private String wrongEmail = "popoo@yahho.com"; //invalid email
     private String invalidEmail = "qazwee";
-
-    private String validMediaUsername = "vetisanvasile";
-    private String validFacebookPassword = "need validpass";
-    private String validGooglePassword = "tinichigiu21@";
+    private String validPassword = "MyValidPass21";
+    private String wrongPassword = "MyVrongPass";
+    private String validMediaUsername = "testemag21@gmail.com";
+    private String validMediaPassword = "EPICemag21";
 
     private String currentURL;
     private String registrationPageURL = "https://www.emag.ro/user/register?ref=ssi_login";
@@ -213,7 +211,7 @@ public class LoginTest extends TestBase{
             LoginPage.facebookUsername(driver).click();
             LoginPage.facebookUsername(driver).sendKeys(validMediaUsername);
             LoginPage.facebookPassword(driver).click();
-            LoginPage.facebookPassword(driver).sendKeys(validFacebookPassword);
+            LoginPage.facebookPassword(driver).sendKeys(validMediaPassword);
             LoginPage.facebookLoginBtn(driver).click();
         }
         else if(goo == true){
@@ -221,7 +219,7 @@ public class LoginTest extends TestBase{
             LoginPage.googleUsername(driver).sendKeys(validMediaUsername);
             LoginPage.googleNextButton(driver).click();
             LoginPage.googlePassword(driver).click();
-            LoginPage.googlePassword(driver).sendKeys(validGooglePassword);
+            LoginPage.googlePassword(driver).sendKeys(validMediaPassword);
             LoginPage.googleLoginBtn(driver).click();
         }
     }
