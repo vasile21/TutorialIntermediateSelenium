@@ -17,13 +17,13 @@ public class LoginTest extends TestBase{
 
     private String validEmail = "vasile_vetisan@yahoo.com";
     private String wrongEmail = "popoo@yahho.com";
-    private String validPassword = "Tinichigiu21@";
+    private String validPassword = "valid_password";
     private String wrongPassword = "MyNewName";
     private String invalidEmail = "qazwee";
 
-    private String validMediaUsername = "vetisanvasile@gmail.com";
-    private String validFacebookPassword = "Tinichigiu21@";
-    private String validGooglePassword = "tinichigiu21@";
+    private String validMediaUsername = "valid_email";
+    private String validFacebookPassword = "valid_facebook.pass";
+    private String validGooglePassword = "valid_google.pass";
 
     private String currentURL;
     private String registrationPageURL = "https://www.emag.ro/user/register?ref=ssi_login";
